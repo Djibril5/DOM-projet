@@ -33,7 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
         likeBtn.addEventListener('click', () => {
           likeBtn.classList.toggle('liked');
+          if(likeBtn.textContent === `Like`){
+            likeBtn.textContent =`Liked`
+          }
+          else{
+            likeBtn.textContent = `Like`
+          }
         });
+        
     
         function updateTotal() {
           let total = 0;
