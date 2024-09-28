@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
           else{
             likeBtn.textContent = `Like`
           }
+          likeBtn.classList.toggle('active');
         });
+
         
     
         function updateTotal() {

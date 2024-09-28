@@ -10,7 +10,9 @@ header{
       background-color: rgb(234, 236, 238);
       align-items: center;
       padding: 15px;
-      border-bottom: 1px solid rgb(108,108,108);
+      border-bottom: 1px solid #0100;
+      box-shadow: 0 4px 4px -2px gray;
+      
 }
 .connexion button{
       width: 70px;
@@ -62,19 +64,24 @@ li a:hover::after{
       width: 100%;
       color: green;
 }
+li a:active{
+      background: goldenrod;
+      padding: 10px;
+}
 img{
   width: 250px;
   height: auto;
   background: #fff;
   margin: 0;
   padding: 10px;
+  border-radius: 5px;
 }
 
 
 .global{
   display: flex;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 10px 0;
   flex-wrap: wrap;
   background-color: rgb(234, 236, 238);
   padding: 10px;
@@ -97,14 +104,16 @@ img{
       
 
 button{
-   width: 60px;
-  height: 50px;
+   width: 60px; 
+  height: 50px; 
   border: 1px solid;
   border: none;
   background: #fff;
   border-radius: 10px;
   margin-left: 20px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
 }
 .total{
       text-align: center;
@@ -114,7 +123,10 @@ button{
       text-transform: uppercase;
 }
 button:hover{
-  background-color: rgb(108,108,108);
+  background-color: rgb(221, 221, 221);
+}
+button:hover.active{
+  background-color: red;
 }
 .total{
   display: block;
